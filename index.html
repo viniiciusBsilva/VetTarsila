@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dra. Tarsila Cantanhede | Médica Veterinária a domicílio em São Luís</title>
+    <meta
+      name="description"
+      content="Dra. Tarsila Cantanhede, médica veterinária (CRMV/MA 3384). Atendimento domiciliar: consulta pet friendly, vacinação, exames, curativos, medicamentos, pressão arterial com doppler, glicemia e atestado de viagem em São Luís, Paço do Lumiar e São José de Ribamar."
+    />
+    <meta name="keywords" content="veterinária a domicílio São Luís, veterinário em casa, vacina pet São Luís, consulta veterinária domiciliar, Paço do Lumiar, São José de Ribamar, Tarsila Cantanhede" />
+    <meta name="theme-color" content="#E0679A" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Dra. Tarsila Cantanhede | Veterinária a domicílio" />
+    <meta property="og:description" content="Consultas, vacinas e exames para o seu pet, no conforto de casa." />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/animacoes.css" rel="stylesheet" />
+
+    <!-- Troca fotos que ainda não existem pelas ilustrações (precisa vir antes das imagens) -->
+    <script src="js/fotos.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VeterinaryCare",
+        "name": "Dra. Tarsila Cantanhede - Médica Veterinária",
+        "description": "Atendimento veterinário domiciliar: consulta pet friendly, coleta de exames, vacinação e vermifugação, medicamentos, curativos, pressão arterial com doppler, glicemia e atestado de saúde para viagens. CRMV/MA 3384.",
+        "telephone": "+55 98 98608-3965",
+        "areaServed": ["São Luís", "Paço do Lumiar", "São José de Ribamar"],
+        "sameAs": ["https://www.instagram.com/vet.tarsila/"]
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Tela de carregamento -->
+    <div id="preloader" aria-hidden="true">
+      <img class="pl-logo" src="img/logo.png" alt="" />
+      <div class="pl-trilha"><i class="fas fa-paw"></i><i class="fas fa-paw"></i><i class="fas fa-paw"></i><i class="fas fa-paw"></i></div>
+      <div class="pl-texto">Preparando muito carinho...</div>
+    </div>
+
+    <!-- Menu -->
+    <nav class="nav" id="nav">
+      <div class="container">
+        <a href="#inicio" class="brand">
+          <img class="brand-logo" src="img/logo.png" alt="Logo Tarsila Cantanhede" />
+          <span><strong>Dra. Tarsila Cantanhede</strong><small>Médica Veterinária</small></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#atendimentos">Atendimentos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#onde">Onde atendo</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </nav>
+
+    <!-- Banner com o cachorro -->
+    <header class="hero" id="inicio">
+      <div class="blob blob-1" data-depth="18"></div>
+      <div class="blob blob-2" data-depth="-14"></div>
+      <div class="blob blob-3" data-depth="26"></div>
+      <div class="floaters" id="floaters"></div>
+
+      <div class="container">
+        <div class="hero-text">
+          <span class="eyebrow" data-anim="pop"><i class="fas fa-home"></i> Atendimento veterinário domiciliar · CRMV/MA 3384</span>
+          <h1 data-anim="up">Cuidado com amor,<br /> no <span class="destaque">conforto do seu lar</span></h1>
+          <p class="lead" data-anim="up" style="--delay: 0.1s">
+            Consulta pet friendly, vacinas, exames e muito mais para o seu pet, sem estresse, sem fila e sem precisar sair de
+            casa. Atendo em São Luís, Paço do Lumiar e São José de Ribamar.
+          </p>
+          <div class="hero-tags" data-anim="up" style="--delay: 0.2s">
+            <span>🩺 Consulta pet friendly</span><span>💉 Vacinas</span><span>🧪 Exames</span><span>✈️ Atestado de viagem</span>
+          </div>
+          <div class="hero-buttons" data-anim="up" style="--delay: 0.3s">
+            <a class="btn btn-whats" href="https://wa.me/5598986083965?text=Ol%C3%A1!%20Tenho%20interesse%20no%20seu%20servi%C3%A7o%20m%C3%A9dico%20veterin%C3%A1rio." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp</a>
+            <a class="btn btn-claro" href="#atendimentos"><i class="fas fa-stethoscope"></i> Ver atendimentos</a>
+          </div>
+        </div>
+
+        <div class="dog-stage" data-anim="pop" style="--delay: 0.2s">
+          <div class="dog-wrap" id="dogWrap">
+            <div class="dog-bubble" id="dogBubble">Faz carinho em mim! 🐾</div>
+            <svg id="dog" viewBox="0 0 400 400" role="img" aria-label="Cachorrinho caramelo de coleira rosa. Passe o mouse ou o dedo para fazer carinho.">
+              <ellipse cx="200" cy="374" rx="120" ry="14" fill="#4A2C4F" opacity="0.08" />
+              <!-- Rabo -->
+              <g class="dog-tail">
+                <path d="M270 318 Q325 305 340 252 Q346 232 333 236 Q322 280 262 296 Z" fill="#C98A4E" />
+              </g>
+              <!-- Corpo -->
+              <g class="dog-body">
+                <ellipse cx="138" cy="332" rx="50" ry="40" fill="#E3A86B" />
+                <ellipse cx="262" cy="332" rx="50" ry="40" fill="#E3A86B" />
+                <ellipse cx="200" cy="300" rx="80" ry="82" fill="#E3A86B" />
+                <ellipse cx="200" cy="322" rx="46" ry="56" fill="#F6D7B0" />
+                <ellipse cx="114" cy="366" rx="24" ry="11" fill="#D69756" />
+                <ellipse cx="286" cy="366" rx="24" ry="11" fill="#D69756" />
+                <rect x="156" y="296" width="32" height="74" rx="16" fill="#E3A86B" />
+                <rect x="212" y="296" width="32" height="74" rx="16" fill="#E3A86B" />
+                <ellipse cx="172" cy="368" rx="23" ry="12" fill="#F6D7B0" />
+                <ellipse cx="228" cy="368" rx="23" ry="12" fill="#F6D7B0" />
+                <path d="M165 362 v10 M179 362 v10 M221 362 v10 M235 362 v10" stroke="#D69756" stroke-width="3" stroke-linecap="round" />
+                <!-- Coleira com plaquinha de coração -->
+                <path d="M136 262 Q200 298 264 262 L266 281 Q200 318 134 281 Z" fill="#E0679A" />
+                <circle cx="200" cy="303" r="5" fill="#C74D82" />
+                <path d="M200 334 l-15 -13 a9.5 9.5 0 0 1 15 -12 a9.5 9.5 0 0 1 15 12 z" fill="#B9A2E6" stroke="#fff" stroke-width="3" />
+              </g>
+              <!-- Cabeça -->
+              <g class="dog-head">
+                <g class="dog-look">
+                <path class="ear-l" d="M152 132 Q104 138 96 206 Q94 248 126 242 Q142 202 168 160 Z" fill="#B97A45" />
+                <path class="ear-r" d="M248 132 Q296 138 304 206 Q306 248 274 242 Q258 202 232 160 Z" fill="#B97A45" />
+                <ellipse cx="200" cy="185" rx="90" ry="82" fill="#E3A86B" />
+                <path d="M200 108 Q184 150 186 196 L214 196 Q216 150 200 108 Z" fill="#F6D7B0" opacity="0.9" />
+                <ellipse cx="200" cy="224" rx="50" ry="37" fill="#F6D7B0" />
+                <ellipse cx="148" cy="208" rx="15" ry="9" fill="#F28FB3" opacity="0.35" />
+                <ellipse cx="252" cy="208" rx="15" ry="9" fill="#F28FB3" opacity="0.35" />
+                <ellipse class="blush-strong" cx="148" cy="208" rx="17" ry="10" fill="#F07AA0" />
+                <ellipse class="blush-strong" cx="252" cy="208" rx="17" ry="10" fill="#F07AA0" />
+                <g class="eyes-open">
+                  <g class="pupils">
+                    <circle cx="164" cy="176" r="13" fill="#2B1D2E" />
+                    <circle cx="236" cy="176" r="13" fill="#2B1D2E" />
+                    <circle cx="169" cy="170" r="4.5" fill="#fff" />
+                    <circle cx="241" cy="170" r="4.5" fill="#fff" />
+                    <circle cx="160" cy="181" r="2" fill="#fff" opacity="0.7" />
+                    <circle cx="232" cy="181" r="2" fill="#fff" opacity="0.7" />
+                  </g>
+                </g>
+                <g class="eyes-happy" stroke="#2B1D2E" stroke-width="6" fill="none" stroke-linecap="round">
+                  <path d="M150 180 q14 -16 28 0" />
+                  <path d="M222 180 q14 -16 28 0" />
+                </g>
+                <ellipse cx="200" cy="207" rx="17" ry="12" fill="#3A2530" />
+                <ellipse cx="195" cy="203" rx="5" ry="3" fill="#fff" opacity="0.6" />
+                <path class="tongue" d="M189 232 q11 34 22 0 z" fill="#F07AA0" />
+                <path d="M200 219 v12 M200 231 q-13 13 -26 3 M200 231 q13 13 26 3" stroke="#3A2530" stroke-width="5" fill="none" stroke-linecap="round" />
+                </g>
+              </g>
+            </svg>
+            <div class="fx-layer" id="fxLayer"></div>
+          </div>
+          <div class="dog-counter" id="dogCounter" aria-live="polite">❤ 0 carinhos</div>
+          <div class="dog-hint">Passe o mouse ou o dedo no cachorrinho</div>
+        </div>
+      </div>
+
+      <div class="wave">
+        <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 30 T720 35 T1080 25 T1440 35 V70 H0 Z" fill="#ffffff" /></svg>
+      </div>
+    </header>
+
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+      <div class="container">
+        <div class="foto-moldura" data-anim="left">
+          <img src="img/fotos/tarsila.jpg" data-fallback="img/ilustracoes/tarsila.svg" alt="Dra. Tarsila Cantanhede, médica veterinária" />
+          <div class="foto-selo"><i class="fas fa-heart"></i>Amor pelos animais</div>
+        </div>
+        <div data-anim="right">
+          <span class="eyebrow"><i class="fas fa-paw"></i> Muito prazer!</span>
+          <h2>Sou a Dra. Tarsila Cantanhede</h2>
+          <p class="crmv"><i class="fas fa-id-card"></i> Médica Veterinária · <strong>CRMV/MA 3384</strong></p>
+          <p>
+            Sou <strong>médica veterinária</strong> e levo o atendimento até a sua casa. Assim o seu pet é cuidado no lugar onde ele se
+            sente mais seguro, sem o estresse do transporte e da sala de espera.
+          </p>
+          <p>
+            Faço <strong>consulta pet friendly, vacinação, coleta de exames, curativos e muito mais a domicílio</strong> em
+            <strong>São Luís, Paço do Lumiar e São José de Ribamar</strong>, sempre com calma, carinho e atenção a cada detalhe.
+          </p>
+          <div class="selos">
+            <span class="selo"><i class="fas fa-stethoscope"></i> Consulta pet friendly</span>
+            <span class="selo"><i class="fas fa-syringe"></i> Vacinas</span>
+            <span class="selo"><i class="fas fa-vial"></i> Exames</span>
+            <span class="selo"><i class="fas fa-home"></i> Em domicílio</span>
+          </div>
+          <a class="btn btn-rosa" href="#contato"><i class="fas fa-calendar-check"></i> Quero agendar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Atendimentos -->
+    <section class="atendimentos" id="atendimentos">
+      <div class="container">
+        <div class="section-head" data-anim="up">
+          <span class="eyebrow"><i class="fas fa-stethoscope"></i> Atendimentos</span>
+          <h2>Como posso cuidar do seu pet</h2>
+          <svg class="scribble" viewBox="0 0 300 16" preserveAspectRatio="none"><path d="M5 10 Q40 2 75 9 T145 9 T215 8 T295 7" /></svg>
+          <p>Tudo feito na sua casa, com o cuidado de um consultório e o conforto que só o lar do seu pet tem.</p>
+        </div>
+        <div class="cards">
+          <article class="card" data-anim="pop" style="--delay: 0.0s">
+            <div class="card-icon"><i class="fas fa-stethoscope"></i></div>
+            <h3>Consulta pet friendly</h3>
+            <p>Consulta no conforto do seu lar, com manejo gentil e no tempo do seu pet, sem o estresse do transporte.</p>
+          </article>
+          <article class="card" data-anim="pop" style="--delay: 0.1s">
+            <div class="card-icon"><i class="fas fa-vial"></i></div>
+            <h3>Coleta de exames laboratoriais</h3>
+            <p>Coleta das amostras para exames laboratoriais na sua casa, sem precisar levar o pet ao laboratório.</p>
+          </article>
+          <article class="card" data-anim="pop" style="--delay: 0.2s">
+            <div class="card-icon"><i class="fas fa-syringe"></i></div>
+            <h3>Vacinação e vermifugação</h3>
+            <p>Vacinas e vermífugos aplicados em casa, com orientação sobre o calendário ideal para o seu pet.</p>
+          </article>
+          <article class="card" data-anim="pop" style="--delay: 0.3s">
+            <div class="card-icon"><i class="fas fa-pills"></i></div>
+            <h3>Administração de medicamentos</h3>
+            <p>Aplicação dos medicamentos do tratamento do seu pet com segurança e orientação para o tutor.</p>
+          </article>
+          <article class="card" data-anim="pop" style="--delay: 0.0s">
+            <div class="card-icon"><i class="fas fa-band-aid"></i></div>
+            <h3>Curativos</h3>
+            <p>Cuidado e troca de curativos em casa, para uma recuperação mais tranquila e confortável.</p>
+          </article>
+          <article class="card" data-anim="pop" style="--delay: 0.1s">
+            <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+            <h3>Pressão arterial com doppler</h3>
+            <p>Aferição da pressão arterial com doppler, importante no acompanhamento de pets idosos ou em tratamento.</p>
+          </article>
+          <article class="card" data-anim="pop" style="--delay: 0.2s">
+            <div class="card-icon"><i class="fas fa-tint"></i></div>
+            <h3>Aferição de glicemia</h3>
+            <p>Medição da glicose no sangue, essencial no acompanhamento de pets diabéticos.</p>
+          </article>
+          <article class="card" data-anim="pop" style="--delay: 0.3s">
+            <div class="card-icon"><i class="fas fa-plane"></i></div>
+            <h3>Atestado de saúde para viagens</h3>
+            <p>Emissão de atestado de saúde para o seu pet viajar com segurança e tranquilidade.</p>
+          </article>
+        </div>
+        <div class="porque" data-anim="up">
+          <h3><i class="fas fa-home"></i> Por que atendimento em casa?</h3>
+          <ul>
+            <li><i class="fas fa-heart"></i> Pet mais calmo e confiante</li>
+            <li><i class="fas fa-car-side"></i> Sem transporte nem sala de espera</li>
+            <li><i class="fas fa-user-clock"></i> Atenção individual e sem pressa</li>
+            <li><i class="fas fa-paw"></i> Ideal para idosos, filhotes e ansiosos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="como-funciona">
+      <div class="container">
+        <div class="section-head" data-anim="up">
+          <span class="eyebrow"><i class="fas fa-route"></i> Passo a passo</span>
+          <h2>Como funciona o atendimento</h2>
+          <svg class="scribble" viewBox="0 0 300 16" preserveAspectRatio="none"><path d="M5 10 Q40 2 75 9 T145 9 T215 8 T295 7" /></svg>
+        </div>
+        <div class="passos">
+          <div class="passo" data-anim="bounce" style="--delay: 0s">
+            <div class="passo-num"><i class="fab fa-whatsapp"></i><b>1</b></div>
+            <h4>Chame no WhatsApp</h4>
+            <p>Conte o que o seu pet precisa: consulta, vacina, exame, curativo...</p>
+          </div>
+          <div class="passo" data-anim="bounce" style="--delay: 0.15s">
+            <div class="passo-num"><i class="far fa-calendar-alt"></i><b>2</b></div>
+            <h4>Combinamos o horário</h4>
+            <p>Escolhemos juntos o melhor dia e horário para a visita.</p>
+          </div>
+          <div class="passo" data-anim="bounce" style="--delay: 0.3s">
+            <div class="passo-num"><i class="fas fa-home"></i><b>3</b></div>
+            <h4>Atendimento em casa</h4>
+            <p>Vou até você e cuido do seu pet com calma e carinho.</p>
+          </div>
+          <div class="passo" data-anim="bounce" style="--delay: 0.45s">
+            <div class="passo-num"><i class="fas fa-heart"></i><b>4</b></div>
+            <h4>Acompanhamento</h4>
+            <p>Orientações e acompanhamento depois da visita.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Onde atendo -->
+    <section class="onde" id="onde">
+      <div class="container">
+        <div data-anim="left">
+          <svg class="mapa" viewBox="0 0 500 380" role="img" aria-label="Mapa ilustrado da Ilha de São Luís com São Luís, Paço do Lumiar e São José de Ribamar">
+            <rect x="0" y="0" width="500" height="380" rx="40" fill="#ECE4FB" />
+            <g fill="#fff" opacity="0.6">
+              <path d="M30 60 q20 -10 40 0 t40 0" stroke="#fff" stroke-width="4" fill="none" />
+              <path d="M380 340 q20 -10 40 0 t40 0" stroke="#fff" stroke-width="4" fill="none" />
+              <path d="M40 320 q20 -10 40 0 t40 0" stroke="#fff" stroke-width="4" fill="none" />
+            </g>
+            <path d="M70 200 Q60 120 130 95 Q190 60 260 80 Q330 60 400 105 Q460 150 440 220 Q450 290 370 310 Q300 340 220 318 Q140 335 95 290 Q55 255 70 200 Z" fill="#FFD9E8" stroke="#F7C6D9" stroke-width="6" />
+            <path d="M120 230 Q170 200 230 215 T340 200" stroke="#fff" stroke-width="5" fill="none" stroke-dasharray="2 12" stroke-linecap="round" />
+            <g class="pin" style="--d: 0.3s">
+              <circle class="pulso" cx="150" cy="212" r="12" fill="#E0679A" />
+              <path d="M150 212 c-16 -20 -24 -32 -24 -44 a24 24 0 0 1 48 0 c0 12 -8 24 -24 44 z" fill="#E0679A" />
+              <circle cx="150" cy="168" r="9" fill="#fff" />
+              <text x="150" y="245" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="20" fill="#4A2C4F">São Luís</text>
+            </g>
+            <g class="pin" style="--d: 0.6s">
+              <circle class="pulso" cx="300" cy="160" r="12" fill="#B9A2E6" />
+              <path d="M300 160 c-16 -20 -24 -32 -24 -44 a24 24 0 0 1 48 0 c0 12 -8 24 -24 44 z" fill="#9A7FD6" />
+              <circle cx="300" cy="116" r="9" fill="#fff" />
+              <text x="300" y="193" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="20" fill="#4A2C4F">Paço do Lumiar</text>
+            </g>
+            <g class="pin" style="--d: 0.9s">
+              <circle class="pulso" cx="370" cy="262" r="12" fill="#F2A679" />
+              <path d="M370 262 c-16 -20 -24 -32 -24 -44 a24 24 0 0 1 48 0 c0 12 -8 24 -24 44 z" fill="#EE8F5C" />
+              <circle cx="370" cy="218" r="9" fill="#fff" />
+              <text x="370" y="295" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="19" fill="#4A2C4F">S. J. de Ribamar</text>
+            </g>
+          </svg>
+        </div>
+        <div data-anim="right">
+          <span class="eyebrow"><i class="fas fa-map-marker-alt"></i> Onde atendo</span>
+          <h2>Vou até você na Ilha</h2>
+          <p>Atendimento domiciliar nestas cidades. Me chama no WhatsApp com o seu bairro para combinarmos a visita.</p>
+          <ul class="cidades">
+            <li><i class="fas fa-map-marker-alt"></i> São Luís</li>
+            <li><i class="fas fa-map-marker-alt"></i> Paço do Lumiar</li>
+            <li><i class="fas fa-map-marker-alt"></i> São José de Ribamar</li>
+          </ul>
+          <a class="btn btn-whats" href="https://wa.me/5598986083965?text=Ol%C3%A1!%20Voc%C3%AA%20atende%20no%20meu%20bairro%3F" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Atende no meu bairro?</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pacientes -->
+    <section class="pacientes" id="pacientes">
+      <div class="container">
+        <div class="section-head" data-anim="up">
+          <span class="eyebrow"><i class="fas fa-camera"></i> Pacientes</span>
+          <h2>Meus pacientes de quatro patas</h2>
+          <svg class="scribble" viewBox="0 0 300 16" preserveAspectRatio="none"><path d="M5 10 Q40 2 75 9 T145 9 T215 8 T295 7" /></svg>
+          <p>Cada atendimento é cheio de carinho, e alguns rendem fotos lindas.</p>
+        </div>
+        <div class="galeria">
+          <figure class="polaroid" data-anim="pop" style="--delay: 0s"><img src="img/fotos/paciente-1.jpg" data-fallback="img/ilustracoes/paciente-1.svg" alt="Paciente da Dra. Tarsila" /><figcaption>Paciente feliz<small>foto em breve</small></figcaption></figure>
+          <figure class="polaroid" data-anim="pop" style="--delay: 0.1s"><img src="img/fotos/paciente-2.jpg" data-fallback="img/ilustracoes/paciente-2.svg" alt="Paciente da Dra. Tarsila" /><figcaption>Paciente feliz<small>foto em breve</small></figcaption></figure>
+          <figure class="polaroid" data-anim="pop" style="--delay: 0.2s"><img src="img/fotos/paciente-3.jpg" data-fallback="img/ilustracoes/paciente-3.svg" alt="Paciente da Dra. Tarsila" /><figcaption>Paciente feliz<small>foto em breve</small></figcaption></figure>
+          <figure class="polaroid" data-anim="pop" style="--delay: 0s"><img src="img/fotos/paciente-4.jpg" data-fallback="img/ilustracoes/paciente-4.svg" alt="Paciente da Dra. Tarsila" /><figcaption>Paciente feliz<small>foto em breve</small></figcaption></figure>
+          <figure class="polaroid" data-anim="pop" style="--delay: 0.1s"><img src="img/fotos/paciente-5.jpg" data-fallback="img/ilustracoes/paciente-5.svg" alt="Paciente da Dra. Tarsila" /><figcaption>Paciente feliz<small>foto em breve</small></figcaption></figure>
+          <figure class="polaroid" data-anim="pop" style="--delay: 0.2s"><img src="img/fotos/paciente-6.jpg" data-fallback="img/ilustracoes/paciente-6.svg" alt="Paciente da Dra. Tarsila" /><figcaption>Paciente feliz<small>foto em breve</small></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dúvidas -->
+    <section id="duvidas">
+      <div class="container">
+        <div class="section-head" data-anim="up">
+          <span class="eyebrow"><i class="fas fa-question-circle"></i> Dúvidas</span>
+          <h2>Perguntas frequentes</h2>
+          <svg class="scribble" viewBox="0 0 300 16" preserveAspectRatio="none"><path d="M5 10 Q40 2 75 9 T145 9 T215 8 T295 7" /></svg>
+        </div>
+        <div class="faq">
+          <details data-anim="up" open>
+            <summary>Como faço para agendar? <i class="fas fa-plus"></i></summary>
+            <div class="resposta">É só me chamar no WhatsApp contando o que o seu pet precisa e o seu bairro. A gente combina o melhor dia e horário para a visita.</div>
+          </details>
+          <details data-anim="up" style="--delay: 0.08s">
+            <summary>Quais regiões você atende? <i class="fas fa-plus"></i></summary>
+            <div class="resposta">Faço atendimento domiciliar em São Luís, Paço do Lumiar e São José de Ribamar. Me chama com o seu bairro para confirmar.</div>
+          </details>
+          <details data-anim="up" style="--delay: 0.16s">
+            <summary>Por que escolher o atendimento em casa? <i class="fas fa-plus"></i></summary>
+            <div class="resposta">Em casa o pet fica mais tranquilo, sem o estresse do transporte e da sala de espera. Para o tutor, é mais prático: sem deslocamento e sem fila.</div>
+          </details>
+          <details data-anim="up" style="--delay: 0.2s">
+            <summary>Você emite atestado de saúde para viagem? <i class="fas fa-plus"></i></summary>
+            <div class="resposta">Sim! Emito atestado de saúde para o seu pet viajar. Me chama no WhatsApp com a data da viagem para combinarmos a avaliação.</div>
+          </details>
+          <details data-anim="up" style="--delay: 0.28s">
+            <summary>Preciso preparar algo para a visita? <i class="fas fa-plus"></i></summary>
+            <div class="resposta">Separe a carteirinha de vacinação e exames anteriores, se tiver, e deixe o pet em um ambiente tranquilo. Se for coletar exames, eu oriento antes da visita sobre qualquer preparo necessário.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato" id="contato">
+      <div class="container">
+        <div class="contato-info" data-anim="left">
+          <span class="eyebrow"><i class="fas fa-paw"></i> Contato</span>
+          <h2>Vamos cuidar do seu pet?</h2>
+          <p>Entre em contato para conhecer mais dos meus serviços e agendar a consulta do seu pet! Pelo formulário, a mensagem já chega prontinha no meu WhatsApp.</p>
+          <div class="contato-links">
+            <a class="whats" href="https://wa.me/5598986083965?text=Ol%C3%A1!%20Tenho%20interesse%20no%20seu%20servi%C3%A7o%20m%C3%A9dico%20veterin%C3%A1rio." target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i><span>WhatsApp<small>(98) 98608-3965</small></span>
+            </a>
+            <a href="https://www.instagram.com/vet.tarsila/" target="_blank" rel="noopener">
+              <i class="fab fa-instagram"></i><span>Instagram<small>@vet.tarsila</small></span>
+            </a>
+            <a href="#onde">
+              <i class="fas fa-map-marker-alt"></i><span>Atendimento domiciliar<small>São Luís · Paço do Lumiar · S. J. de Ribamar</small></span>
+            </a>
+          </div>
+        </div>
+        <div class="form-card" data-anim="right">
+          <h3>Agende uma visita</h3>
+          <form id="agendaForm" novalidate>
+            <div class="form-grid">
+              <div><label for="tutor">Seu nome *</label><input id="tutor" type="text" placeholder="Ex.: Maria" required /></div>
+              <div><label for="pet">Nome do pet *</label><input id="pet" type="text" placeholder="Ex.: Thor" required /></div>
+              <div>
+                <label for="especie">Espécie</label>
+                <select id="especie"><option value="">Selecione</option><option>Cachorro</option><option>Gato</option><option>Outro</option></select>
+              </div>
+              <div>
+                <label for="servico">Atendimento</label>
+                <select id="servico"><option value="">Selecione</option><option>Consulta pet friendly</option><option>Coleta de exames laboratoriais</option><option>Vacinação e vermifugação</option><option>Administração de medicamentos</option><option>Curativos</option><option>Pressão arterial com doppler</option><option>Aferição de glicemia</option><option>Atestado de saúde para viagens</option><option>Outro</option></select>
+              </div>
+              <div class="full"><label for="bairro">Bairro / cidade</label><input id="bairro" type="text" placeholder="Ex.: Cohama, São Luís" /></div>
+              <div class="full"><label for="mensagem">Mensagem</label><textarea id="mensagem" placeholder="Conte um pouquinho sobre o seu pet"></textarea></div>
+            </div>
+            <button class="btn btn-whats" type="submit"><i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp</button>
+            <div class="form-feedback" id="formFeedback" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <div class="patinhas"><i class="fas fa-paw"></i> <i class="fas fa-paw"></i> <i class="fas fa-paw"></i></div>
+      <p>Dra. Tarsila Cantanhede · Médica Veterinária · CRMV/MA 3384 · Atendimento domiciliar</p>
+      <p><a href="https://www.instagram.com/vet.tarsila/" target="_blank" rel="noopener">@vet.tarsila</a> · &copy; 2026</p>
+    </footer>
+
+    <a class="whats-float" href="https://wa.me/5598986083965?text=Ol%C3%A1!%20Tenho%20interesse%20no%20seu%20servi%C3%A7o%20m%C3%A9dico%20veterin%C3%A1rio." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+      <span class="dedos"><span></span><span></span><span></span><span></span></span>
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/cachorro.js"></script>
+    <script src="js/animacoes.js"></script>
+    <script src="js/whatsapp-form.js"></script>
+  </body>
+</html>

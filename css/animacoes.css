@@ -1,0 +1,150 @@
+/* ==========================================================
+   Animações do portfólio
+   ========================================================== */
+
+/* ---------- Tela de carregamento ---------- */
+#preloader {
+  position: fixed; inset: 0; z-index: 9999; background: var(--rosa-bg);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+#preloader.is-hidden { opacity: 0; visibility: hidden; }
+.pl-paw { font-size: 64px; color: var(--rosa); animation: pl-pulse 1.1s ease-in-out infinite; }
+.pl-trilha { display: flex; gap: 18px; }
+.pl-trilha i { color: var(--lilas); font-size: 20px; opacity: 0; animation: pl-passo 1.6s ease-in-out infinite; }
+.pl-trilha i:nth-child(odd) { transform: translateY(8px) rotate(-10deg); }
+.pl-trilha i:nth-child(even) { transform: translateY(-4px) rotate(10deg); }
+.pl-trilha i:nth-child(2) { animation-delay: 0.2s; }
+.pl-trilha i:nth-child(3) { animation-delay: 0.4s; }
+.pl-trilha i:nth-child(4) { animation-delay: 0.6s; }
+.pl-texto { font-family: "Fredoka", sans-serif; color: var(--ameixa); font-size: 18px; }
+@keyframes pl-pulse { 0%, 100% { transform: scale(1) rotate(-6deg); } 50% { transform: scale(1.15) rotate(6deg); } }
+@keyframes pl-passo { 0% { opacity: 0; } 25%, 70% { opacity: 1; } 100% { opacity: 0; } }
+
+/* ---------- Blobs que mudam de forma ---------- */
+.blob { animation: blob-morph 14s ease-in-out infinite alternate; transition: translate 0.4s ease-out; }
+.blob-2 { animation-duration: 18s; animation-delay: -4s; }
+.blob-3 { animation-duration: 11s; animation-delay: -2s; }
+@keyframes blob-morph {
+  0% { border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%; transform: rotate(0deg) scale(1); }
+  50% { border-radius: 58% 42% 38% 62% / 55% 61% 39% 45%; transform: rotate(20deg) scale(1.06); }
+  100% { border-radius: 37% 63% 51% 49% / 36% 39% 61% 64%; transform: rotate(-12deg) scale(0.97); }
+}
+
+/* Patinhas e corações subindo no fundo do banner */
+.floaters { position: absolute; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
+.floater { position: absolute; bottom: -40px; color: var(--rosa); opacity: 0; animation: subir linear infinite; }
+.floater.lilas { color: var(--lilas); }
+@keyframes subir {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  12% { opacity: 0.55; }
+  100% { transform: translateY(-110vh) rotate(40deg); opacity: 0; }
+}
+
+/* ---------- Cachorro ---------- */
+#dog .dog-body { transform-box: fill-box; transform-origin: 50% 100%; animation: respirar 3.2s ease-in-out infinite; }
+#dog .dog-head { transform-box: view-box; transform-origin: 200px 245px; transition: transform 0.45s cubic-bezier(0.3, 1.6, 0.5, 1); animation: cabeca 6s ease-in-out infinite; }
+#dog .dog-tail { transform-box: view-box; transform-origin: 285px 300px; animation: rabo 1.4s ease-in-out infinite; }
+#dog .ear-l { transform-box: view-box; transform-origin: 140px 150px; transition: transform 0.4s cubic-bezier(0.3, 1.6, 0.5, 1); }
+#dog .ear-r { transform-box: view-box; transform-origin: 260px 150px; transition: transform 0.4s cubic-bezier(0.3, 1.6, 0.5, 1); }
+#dog .eyes-open { transform-box: fill-box; transform-origin: 50% 50%; animation: piscar 4.5s infinite; }
+#dog .eyes-happy, #dog .tongue, #dog .blush-strong { opacity: 0; transition: opacity 0.25s; }
+#dog .tongue { transform-box: fill-box; transform-origin: 50% 0%; transform: scaleY(0); transition: transform 0.3s cubic-bezier(0.3, 1.6, 0.5, 1), opacity 0.2s; }
+#dog .eyes-open { transition: opacity 0.2s; }
+
+@keyframes respirar { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(1.015, 1.03); } }
+@keyframes cabeca { 0%, 100% { transform: rotate(0deg); } 30% { transform: rotate(-3deg); } 60% { transform: rotate(3deg); } }
+@keyframes rabo { 0%, 100% { transform: rotate(-10deg); } 50% { transform: rotate(22deg); } }
+@keyframes rabo-rapido { 0%, 100% { transform: rotate(-25deg); } 50% { transform: rotate(35deg); } }
+@keyframes piscar { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+
+/* Feliz (recebendo carinho) */
+#dog.happy .dog-tail { animation: rabo-rapido 0.28s ease-in-out infinite; }
+#dog.happy .dog-head { animation: none; transform: rotate(-7deg); }
+#dog.happy .eyes-open { opacity: 0; }
+#dog.happy .eyes-happy, #dog.happy .blush-strong { opacity: 1; }
+#dog.happy .tongue { opacity: 1; transform: scaleY(1); }
+#dog.happy .ear-l { transform: rotate(-16deg); }
+#dog.happy .ear-r { transform: rotate(16deg); }
+#dog.happy .dog-body { animation-duration: 0.9s; }
+
+/* Pulinho ao tocar */
+.dog-wrap.hop #dog { animation: pulinho 0.5s cubic-bezier(0.3, 1.6, 0.5, 1); }
+@keyframes pulinho { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-16px) scale(1.02, 0.98); } }
+
+/* Balão de fala */
+.dog-bubble { animation: balao 2.4s ease-in-out infinite; }
+.dog-bubble.troca { animation: balao-pop 0.45s cubic-bezier(0.3, 1.6, 0.5, 1); }
+@keyframes balao { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-8px) rotate(1deg); } }
+@keyframes balao-pop { 0% { transform: scale(0.6); } 100% { transform: scale(1); } }
+
+/* "Au au!" */
+.latido {
+  position: absolute; right: 2%; top: 22%; z-index: 5;
+  font-family: "Fredoka", sans-serif; font-weight: 600; font-size: 26px; color: var(--rosa);
+  background: #fff; padding: 6px 16px; border-radius: 20px; box-shadow: var(--sombra);
+  animation: latir 1.3s cubic-bezier(0.3, 1.6, 0.5, 1) forwards; pointer-events: none;
+}
+@keyframes latir {
+  0% { opacity: 0; transform: scale(0.4) rotate(-10deg); }
+  25% { opacity: 1; transform: scale(1.1) rotate(4deg); }
+  75% { opacity: 1; transform: scale(1) rotate(0deg); }
+  100% { opacity: 0; transform: translateY(-20px) scale(0.9); }
+}
+
+/* Corações e patinhas que saem do carinho */
+.fx {
+  position: absolute; left: 0; top: 0; font-size: 22px; color: var(--rosa);
+  animation: fx-subir 1.4s ease-out forwards; pointer-events: none;
+}
+.fx.lilas { color: var(--lilas); }
+.fx.paw { font-size: 18px; color: var(--lilas); }
+@keyframes fx-subir {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+  15% { opacity: 1; transform: translate(-50%, -70%) scale(1.15); }
+  100% { opacity: 0; transform: translate(calc(-50% + var(--dx, 0px)), -160px) scale(0.8) rotate(var(--rot, 0deg)); }
+}
+
+/* Contador "pula" ao mudar */
+.dog-counter.bump { animation: bump 0.35s cubic-bezier(0.3, 1.6, 0.5, 1); }
+@keyframes bump { 50% { transform: scale(1.18); } }
+
+/* ---------- Revelação ao rolar ---------- */
+[data-anim] {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.9s cubic-bezier(0.3, 1.4, 0.5, 1);
+  transition-delay: var(--delay, 0s);
+}
+[data-anim="pop"] { transform: scale(0.8); }
+[data-anim="up"] { transform: translateY(50px); }
+[data-anim="left"] { transform: translateX(-60px); }
+[data-anim="right"] { transform: translateX(60px); }
+[data-anim="bounce"] { transform: translateY(40px) scale(0.9); }
+[data-anim].is-visible { opacity: 1; transform: none; }
+/* No celular, nada entra pelas laterais (evita a página alargar) */
+@media (max-width: 991px) {
+  [data-anim="left"], [data-anim="right"] { transform: translateY(40px); }
+}
+.polaroid[data-anim].is-visible { transform: rotate(var(--rot, -2deg)); }
+.polaroid[data-anim].is-visible:hover { transform: rotate(0) scale(1.05); }
+
+/* Pinos do mapa caindo */
+.mapa .pin { opacity: 0; }
+.is-visible .mapa .pin { animation: pino-cai 0.8s cubic-bezier(0.3, 1.6, 0.5, 1) forwards; animation-delay: var(--d, 0.2s); }
+@keyframes pino-cai { 0% { opacity: 0; transform: translateY(-60px); } 100% { opacity: 1; transform: translateY(0); } }
+.mapa .pulso { transform-box: fill-box; transform-origin: center; animation: pulso 2s ease-out infinite; }
+@keyframes pulso { 0% { transform: scale(0.6); opacity: 0.7; } 100% { transform: scale(2.2); opacity: 0; } }
+
+/* Ícones dos passos balançando */
+.passo-num i { animation: balancar 3s ease-in-out infinite; }
+.passo:nth-child(2) .passo-num i { animation-delay: 0.4s; }
+.passo:nth-child(3) .passo-num i { animation-delay: 0.8s; }
+.passo:nth-child(4) .passo-num i { animation-delay: 1.2s; }
+@keyframes balancar { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }
+
+/* Botão flutuante pulsando */
+.whats-float::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; border: 3px solid var(--whats);
+  animation: anel 2s ease-out infinite;
+}
+@keyframes anel { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(1.6); opacity: 0; } }
