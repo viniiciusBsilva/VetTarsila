@@ -1,3 +1,6 @@
 .vercel
 # Foto original (o site usa img/fotos/tarsila.jpg)
 img/ilustracoes/tarsila.PNG
+
+.vercel
+.env*
