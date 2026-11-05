@@ -45,3 +45,10 @@ Enquanto a foto não existir, o site mostra a ilustração correspondente de `im
 - `js/animacoes.js`: menu, patinhas subindo, parallax dos blobs e revelação ao rolar.
 - `js/whatsapp-form.js`: formulário de agendamento.
 - `js/fotos.js`: troca as fotos que faltam pelas ilustrações.
+
+## Ajustes pedidos pela Tarsila (05/11/2026, pasta `ajustes/`, que não é publicada)
+- Sem "Dra.": em todo o site ficou "Tarsila Cantanhede" / "Médica Veterinária" (áudio 01).
+- No "Sobre": "Sou a M.V. Tarsila Cantanhede" e "médica veterinária formada pela Universidade Estadual do Maranhão (UEMA)" (áudio 05).
+- Cachorro do banner preto e branco com sobrancelhas caramelo, inspirado na Pocahontas, a cachorra dela (texto 01, imagens 02/03).
+- Cartão "Exames laboratoriais e de imagem": coleta de amostras e exames de imagem (ultrassom, radiografia e ecocardiograma), em parceria com outro veterinário que tem os aparelhos (áudio 02, texto 02).
+- Galeria com as fotos reais e as espécies: Snoopy (Canino), Caju (Canino), Feliz (Ovino), Augusto (Canino), Flora (Canino) e Dedé (Felino) (áudios 03/04, imagens 05–10). O formulário ganhou a opção "Ovino".

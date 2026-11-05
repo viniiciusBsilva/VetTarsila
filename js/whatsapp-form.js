@@ -1,5 +1,5 @@
 /*
- * Formulário de agendamento: monta a mensagem e abre o WhatsApp da Dra. Tarsila.
+ * Formulário de agendamento: monta a mensagem e abre o WhatsApp da Tarsila.
  */
 (function () {
   "use strict";
@@ -22,7 +22,7 @@
       feedback.textContent = "Preencha o seu nome e o nome do pet 🐾";
       return;
     }
-    var linhas = ["Olá, Dra. Tarsila! Tenho interesse no seu serviço médico veterinário.", "", "*Tutor(a):* " + tutor, "*Pet:* " + pet];
+    var linhas = ["Olá, Tarsila! Tenho interesse no seu serviço médico veterinário.", "", "*Tutor(a):* " + tutor, "*Pet:* " + pet];
     if (v("especie")) linhas.push("*Espécie:* " + v("especie"));
     if (v("servico")) linhas.push("*Atendimento:* " + v("servico"));
     if (v("bairro")) linhas.push("*Bairro/cidade:* " + v("bairro"));

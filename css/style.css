@@ -1,5 +1,5 @@
 /* ==========================================================
-   Dra. Tarsila Cantanhede · Médica Veterinária
+   Tarsila Cantanhede · Médica Veterinária
    Paleta: rosa #E0679A · rosa claro #F7C6D9 · lilás #B9A2E6 · ameixa #4A2C4F
    ========================================================== */
 
@@ -432,3 +432,6 @@ section { position: relative; padding: 100px 0; }
   .porque { padding: 22px 18px; }
   .porque h3 { white-space: normal; }
 }
+
+/* "M.V." com os pontos visíveis na fonte arredondada */
+abbr.mv { text-decoration: none; letter-spacing: 0.08em; cursor: help; }
